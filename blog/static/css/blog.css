@@ -1,3 +1,22 @@
-h1 {
-  color: red;
-}
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,400,500,700,900&subset=korean");
+body {
+  font-family: 'Noto Sans KR', sans-serif; }
+
+h1, h2, h3, h4 {
+  font-weight: 900; }
+
+a {
+  text-decoration: none;
+  color: #0078FF; }
+  a:hover {
+    color: #0053F4; }
+
+.main {
+  padding-top: 40px; }
+
+.list-posts {
+  list-style: none;
+  padding: 0;
+  margin: 40px 0 0 0; }
+
+/*# sourceMappingURL=blog.css.map */

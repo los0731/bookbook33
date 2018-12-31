@@ -12,6 +12,7 @@
 
   {% if user.is_authenticated %}
   <a class="btn-edit" href="{% url 'post_edit' pk=post.pk %}">🛠️</a>
+
   {% endif %}
 </div>
 {% endblock %}

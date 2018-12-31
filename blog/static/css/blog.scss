@@ -174,7 +174,11 @@ a {
     vertical-align: top;
   }
 
-  .item-new {float: right;}
+  .item-new,
+  .item-sign {
+    float: right;
+    margin-left: 8px;
+  }
 }
 
 .btn-home {
@@ -215,7 +219,10 @@ a {
 }
 
 .post-body {
-  .title {margin: 0 0 0 -3px;}
+  .title {
+    font-size: 3.2rem;
+    margin: 0 0 0 -3px;
+  }
 
   .date {
     margin-top: 8px;

@@ -47,8 +47,10 @@ a {
   .nav-global ul .nav-global-item {
     display: inline-block;
     vertical-align: top; }
-  .nav-global ul .item-new {
-    float: right; }
+  .nav-global ul .item-new,
+  .nav-global ul .item-sign {
+    float: right;
+    margin-left: 8px; }
 
 .btn-home {
   font-family: 'IBM Plex Serif', 'Noto Serif KR', serif;
@@ -84,6 +86,7 @@ a {
     font-size: 14px; }
 
 .post-body .title {
+  font-size: 3.2rem;
   margin: 0 0 0 -3px; }
 .post-body .date {
   margin-top: 8px;

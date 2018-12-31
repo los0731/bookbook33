@@ -113,8 +113,10 @@ a {
     border-style: solid;
     border-color: #E1E7EE;
     padding: 8px 0;
+    border-radius: 0;
     outline: none;
-    width: 100%; }
+    width: 100%;
+    -webkit-appearance: none; }
     .form-post input:hover, .form-post input:focus,
     .form-post textarea:hover,
     .form-post textarea:focus {

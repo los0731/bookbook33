@@ -59,14 +59,17 @@ a {
   .btn-home:hover {
     color: #512DA8; }
 
+.btn-sign,
 .btn-new,
 .btn-edit {
   display: inline-block;
   vertical-align: top;
   font-size: 1.4rem; }
-  .btn-new:not(:hover),
-  .btn-edit:not(:hover) {
-    filter: brightness(0); }
+  @media (min-width: 768px) {
+    .btn-sign:not(:hover),
+    .btn-new:not(:hover),
+    .btn-edit:not(:hover) {
+      filter: brightness(0); } }
 
 .list-posts {
   list-style: none;

@@ -188,12 +188,14 @@ a {
   &:hover {color: $color-primary--hover;}
 }
 
+.btn-sign,
 .btn-new,
 .btn-edit {
   display: inline-block;
   vertical-align: top;
   font-size: 1.4rem;
-  &:not(:hover) {filter: brightness(0);}
+  @media (min-width: 768px) {&:not(:hover) {filter: brightness(0);}}
+
 }
 
 .list-posts {

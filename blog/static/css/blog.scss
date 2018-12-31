@@ -112,7 +112,7 @@ $color-danger--hover: $red-700;
   outline: none;
   width: 100%;
   -webkit-appearance: none;
-  
+
   &:hover,
   &:focus {border-color: $color-text--primary;}
 }
@@ -162,7 +162,7 @@ a {
 
 .main-content {
   max-width: 640px;
-  padding: 16px;
+  padding: 16px 16px 80px 16px;
 }
 
 .nav-global ul {

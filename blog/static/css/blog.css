@@ -37,7 +37,7 @@ a {
 
 .main-content {
   max-width: 640px;
-  padding: 16px; }
+  padding: 16px 16px 80px 16px; }
 
 .nav-global ul {
   list-style: none;

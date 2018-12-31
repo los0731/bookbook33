@@ -1,22 +1,124 @@
-@import url("https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,400,500,700,900&subset=korean");
+@import url("https://fonts.googleapis.com/css?family=Noto+Serif+KR:200,500,900&subset=korean");
+@import url("https://fonts.googleapis.com/css?family=IBM+Plex+Serif:100,400,700");
 body {
-  font-family: 'Noto Sans KR', sans-serif; }
+  font-family: 'IBM Plex Serif', 'Noto Serif KR', serif;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  color: #263747; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0; }
 
 h1, h2, h3, h4 {
-  font-weight: 900; }
+  font-weight: 900;
+  letter-spacing: -1px;
+  word-spacing: -1px;
+  line-height: 1.2;
+  word-break: keep-all; }
+
+h5, h6 {
+  line-height: 1.6; }
+
+p {
+  font-size: 24px;
+  line-height: 1.7;
+  margin: 0 0 16px 0; }
+  @media (max-width: 767px) {
+    p {
+      font-size: 20px;
+      line-height: 1.7; } }
 
 a {
-  text-decoration: none;
-  color: #0078FF; }
+  color: #263747; }
   a:hover {
-    color: #0053F4; }
+    text-decoration: none;
+    color: #673AB7; }
 
-.main {
-  padding-top: 40px; }
+.main-content {
+  max-width: 640px;
+  padding: 16px; }
+
+.nav-global ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 16vh 0;
+  font-size: 1.4rem; }
+  .nav-global ul .nav-global-item {
+    display: inline-block;
+    vertical-align: top; }
+  .nav-global ul .item-new {
+    float: right; }
+
+.btn-home {
+  font-family: 'IBM Plex Serif', 'Noto Serif KR', serif;
+  color: #263747;
+  font-weight: 900; }
+  .btn-home:hover {
+    color: #512DA8; }
+
+.btn-new,
+.btn-edit {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 1.4rem; }
+  .btn-new:not(:hover),
+  .btn-edit:not(:hover) {
+    filter: brightness(0); }
 
 .list-posts {
   list-style: none;
   padding: 0;
+  margin: 0; }
+  .list-posts .list-post-item:nth-child(n+2) {
+    margin-top: 40px; }
+  .list-posts .list-post-item .title {
+    font-family: 'IBM Plex Serif', 'Noto Serif KR', serif;
+    margin: 0 0 0 -4px; }
+    @media (max-width: 767px) {
+      .list-posts .list-post-item .title {
+        font-size: 1.4rem; } }
+  .list-posts .list-post-item .date {
+    color: #98A8B9;
+    margin-top: 8px;
+    font-size: 14px; }
+
+.post-body .title {
+  margin: 0 0 0 -3px; }
+.post-body .date {
+  margin-top: 8px;
+  font-weight: 500; }
+.post-body .body {
   margin: 40px 0 0 0; }
+.post-body .btn-edit {
+  margin-top: 40px; }
+
+.form-post {
+  margin-top: 24px; }
+  .form-post label {
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 0;
+    vertical-align: bottom; }
+  .form-post input,
+  .form-post textarea {
+    display: block;
+    border-width: 2px 0 0 0;
+    border-style: solid;
+    border-color: #E1E7EE;
+    padding: 8px 0;
+    outline: none;
+    width: 100%; }
+    .form-post input:hover, .form-post input:focus,
+    .form-post textarea:hover,
+    .form-post textarea:focus {
+      border-color: #263747; }
+  .form-post textarea {
+    min-height: 50vh; }
+  .form-post .btn-save {
+    background-color: #673AB7;
+    color: white; }
+    .form-post .btn-save:hover {
+      background-color: #512DA8; }
 
 /*# sourceMappingURL=blog.css.map */

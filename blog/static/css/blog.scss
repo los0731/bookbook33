@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,400,500,700,900&subset=korean');
+//@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,400,600,900&subset=korean');
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif+KR:200,500,900&subset=korean');
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Serif:100,400,700');
 
 // 색상에 따라 구분
 $white-color: white;
@@ -44,6 +46,24 @@ $blue-700: #0053F4;
 $blue-800: #0044E0;
 $blue-900: #0038AE;
 
+$purple-50: #F3E5F5;
+$purple-100: #E1BEE7;
+$purple-500: #9C27B0;
+$purple-700: #7B1FA2;
+$purple-900: #4A148C;
+
+$deep-purple-50: #EDE7F6;
+$deep-purple-100: #D1C4E9;
+$deep-purple-200: #B39DDB;
+$deep-purple-300: #9575CD;
+$deep-purple-400: #7E57C2;
+$deep-purple-500: #673AB7; //$color-info
+$deep-purple-600: #5E35B1;
+$deep-purple-700: #512DA8;
+$deep-purple-800: #4527A0;
+$deep-purple-900: #311B92;
+$deep-purple-950: #051060;
+
 $blue-grey-10: #FBFBFD; //$color-background
 $blue-grey-25: #F7F7FB;
 $blue-grey-50: #ECEFF5; //$color-background:hover, $color-default, $color-code-background
@@ -63,16 +83,17 @@ $blue-grey-940: #172334;
 $blue-grey-990: #142029; //$color-border--dark
 $blue-grey-999: #0C151C;
 
-$color-background: $blue-grey-10;
-$color-text--primary: $blue-grey-920;
-$color-text--secondary: $blue-grey-400;
+$color-background: $blue-grey-25;
+$color-background--hover: $blue-grey-10;
+$color-text--primary: $blue-grey-900;
+$color-text--secondary: $blue-grey-300;
 $color-border: $blue-grey-75;
 $color-border--hover: $blue-grey-200;
 
 $color-default: $blue-grey-50;
 $color-default--hover: $blue-grey-100;
-$color-primary: $blue-500;
-$color-primary--hover: $blue-700;
+$color-primary: $deep-purple-500;
+$color-primary--hover: $deep-purple-700;
 $color-success: $green-500;
 $color-success--hover: $green-700;
 $color-warning: $orange-500;
@@ -80,31 +101,153 @@ $color-warning--hover: $orange-700;
 $color-danger: $red-500;
 $color-danger--hover: $red-700;
 
+@mixin font-serif {font-family: 'IBM Plex Serif', 'Noto Serif KR', serif;}
+@mixin form-control {
+  display: block;
+  border-width: 2px 0 0 0;
+  border-style: solid;
+  border-color: $color-border;
+  padding: 8px 0;
+  outline: none;
+  width: 100%;
+
+  &:hover,
+  &:focus {border-color: $color-text--primary;}
+}
+
 body {
-  font-family: 'Noto Sans KR', sans-serif;
+  @include font-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  color: $color-text--primary;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
 }
 
 h1, h2, h3, h4 {
   font-weight: 900;
+  letter-spacing: -1px;
+  word-spacing: -1px;
+  line-height: 1.2;
+  word-break: keep-all;
+}
+
+h5, h6 {
+  line-height: 1.6;
+}
+
+p {
+  font-size: 24px;
+  line-height: 1.7;
+  margin: 0 0 16px 0;
+
+  @media (max-width: 767px) {
+    font-size: 20px;
+    line-height: 1.7;
+  }
 }
 
 a {
-  text-decoration: none;
-  color: $color-primary;
+  color: $color-text--primary;
+  &:hover {
+    text-decoration: none;
+    color: $color-primary;
+  }
+}
+
+.main-content {
+  max-width: 640px;
+  padding: 16px;
+}
+
+.nav-global ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 16vh 0;
+  font-size: 1.4rem;
+
+  .nav-global-item {
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  .item-new {float: right;}
+}
+
+.btn-home {
+  @include font-serif;
+  color: $color-text--primary;
+  font-weight: 900;
   &:hover {color: $color-primary--hover;}
 }
 
-.main {
-  padding-top: 40px;
+.btn-new,
+.btn-edit {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 1.4rem;
+  &:not(:hover) {filter: brightness(0);}
 }
 
 .list-posts {
   list-style: none;
   padding: 0;
-  margin: 40px 0 0 0;
+  margin: 0;
+
+  .list-post-item {
+    &:nth-child(n+2) {margin-top: 40px;}
+
+    .title {
+      @include font-serif;
+      margin: 0 0 0 -4px;
+      @media (max-width: 767px) {font-size: 1.4rem;}
+    }
+
+    .date {
+      color: $color-text--secondary;
+      margin-top: 8px;
+      font-size: 14px;
+    }
+  }
 }
 
-.btn-home {
+.post-body {
+  .title {margin: 0 0 0 -3px;}
 
+  .date {
+    margin-top: 8px;
+    font-weight: 500;
+  }
+
+  .body {margin: 40px 0 0 0;}
+
+  .btn-edit {margin-top: 40px;}
 }
+
+.form-post {
+  margin-top: 24px;
+
+  label {
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 0;
+    vertical-align: bottom;
+  }
+
+  input,
+  textarea {@include form-control;}
+
+  textarea {min-height: 50vh;}
+
+  .btn-save {
+    background-color: $color-primary;
+    color: white;
+
+    &:hover {background-color: $color-primary--hover;}
+  }
+}
+
 

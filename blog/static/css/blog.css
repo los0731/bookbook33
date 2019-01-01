@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Noto+Serif+KR:200,500,900&subset=korean");
 @import url("https://fonts.googleapis.com/css?family=IBM+Plex+Serif:100,400,700");
 body {
@@ -102,6 +103,7 @@ a {
 .form-post {
   margin-top: 24px; }
   .form-post label {
+    display: block;
     font-size: 1rem;
     font-weight: 700;
     margin: 0;
@@ -117,6 +119,10 @@ a {
     outline: none;
     width: 100%;
     -webkit-appearance: none; }
+    .form-post input::-webkit-input-placeholder::before,
+    .form-post textarea::-webkit-input-placeholder::before {
+      color: #CDD7E0;
+      content: "입력"; }
     .form-post input:hover, .form-post input:focus,
     .form-post textarea:hover,
     .form-post textarea:focus {

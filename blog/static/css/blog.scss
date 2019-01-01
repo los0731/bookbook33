@@ -111,7 +111,13 @@ $color-danger--hover: $red-700;
   border-radius: 0;
   outline: none;
   width: 100%;
+
   -webkit-appearance: none;
+ 
+  &::-webkit-input-placeholder::before {
+      color: $blue-grey-100;
+      content:"입력";
+  }
 
   &:hover,
   &:focus {border-color: $color-text--primary;}
@@ -242,6 +248,7 @@ a {
   margin-top: 24px;
 
   label {
+    display: block;
     font-size: 1rem;
     font-weight: 700;
     margin: 0;
@@ -251,7 +258,9 @@ a {
   input,
   textarea {@include form-control;}
 
-  textarea {min-height: 50vh;}
+  textarea {
+    min-height: 50vh;
+  }
 
   .btn-save {
     background-color: $color-primary;

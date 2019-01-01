@@ -8,6 +8,24 @@ body {
   font-size: 16px;
   color: #263747; }
 
+footer {
+  margin-top: 120px;
+  color: #98A8B9; }
+  footer h6 {
+    font-size: 14px; }
+  footer .home a {
+    color: #98A8B9; }
+    footer .home a:hover {
+      color: #673AB7; }
+  footer .about a {
+    color: #673AB7; }
+    footer .about a:hover {
+      color: #512DA8; }
+  footer .template {
+    margin-top: 8px;
+    padding-left: 8px;
+    border-left: 2px solid #E1E7EE; }
+
 h1, h2, h3, h4, h5, h6 {
   margin: 0; }
 

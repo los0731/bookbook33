@@ -111,16 +111,16 @@ $color-danger--hover: $red-700;
   border-radius: 0;
   outline: none;
   width: 100%;
-
   -webkit-appearance: none;
- 
-  &::-webkit-input-placeholder::before {
-      color: $blue-grey-100;
-      content:"입력";
-  }
 
   &:hover,
   &:focus {border-color: $color-text--primary;}
+
+  &::placeholder { color: $blue-grey-100; }
+  &::-webkit-input-placeholder { /* Chrome/Opera/Safari */color: $blue-grey-100; }
+  &::-moz-placeholder { /* Firefox 19+ */color: $blue-grey-100; }
+  &:-ms-input-placeholder { /* IE 10+ */ color: $blue-grey-100; }
+  &:-moz-placeholder { /* Firefox 18- */ color: $blue-grey-100; }
 }
 
 body {
@@ -154,9 +154,7 @@ footer {
   }
 }
 
-h1, h2, h3, h4, h5, h6 {
-  margin: 0;
-}
+h1, h2, h3, h4, h5, h6 {margin: 0;}
 
 h1, h2, h3, h4 {
   font-weight: 900;
@@ -166,9 +164,7 @@ h1, h2, h3, h4 {
   word-break: keep-all;
 }
 
-h5, h6 {
-  line-height: 1.6;
-}
+h5, h6 {line-height: 1.6;}
 
 p {
   font-size: 24px;
@@ -279,7 +275,9 @@ a {
   }
 
   input,
-  textarea {@include form-control;}
+  textarea {
+    @include form-control;
+  }
 
   textarea {
     min-height: 50vh;

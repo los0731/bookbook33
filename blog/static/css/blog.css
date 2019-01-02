@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Noto+Serif+KR:200,500,900&subset=korean");
 @import url("https://fonts.googleapis.com/css?family=IBM+Plex+Serif:100,400,700");
 body {
@@ -137,14 +136,29 @@ a {
     outline: none;
     width: 100%;
     -webkit-appearance: none; }
-    .form-post input::-webkit-input-placeholder::before,
-    .form-post textarea::-webkit-input-placeholder::before {
-      color: #CDD7E0;
-      content: "입력"; }
     .form-post input:hover, .form-post input:focus,
     .form-post textarea:hover,
     .form-post textarea:focus {
       border-color: #263747; }
+    .form-post input::placeholder,
+    .form-post textarea::placeholder {
+      color: #CDD7E0; }
+    .form-post input::-webkit-input-placeholder,
+    .form-post textarea::-webkit-input-placeholder {
+      /* Chrome/Opera/Safari */
+      color: #CDD7E0; }
+    .form-post input::-moz-placeholder,
+    .form-post textarea::-moz-placeholder {
+      /* Firefox 19+ */
+      color: #CDD7E0; }
+    .form-post input:-ms-input-placeholder,
+    .form-post textarea:-ms-input-placeholder {
+      /* IE 10+ */
+      color: #CDD7E0; }
+    .form-post input:-moz-placeholder,
+    .form-post textarea:-moz-placeholder {
+      /* Firefox 18- */
+      color: #CDD7E0; }
   .form-post textarea {
     min-height: 50vh; }
   .form-post .btn-save {

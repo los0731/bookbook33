@@ -9,7 +9,8 @@
   </h6>
   {% endif %}
   <div class="body">
-    {{ post.rendered_html|safe }}
+      <!-- {{ post.rendered_html|safe }} -->
+      {{ post.text|safe }}
   </div>
 
   {% if user.is_authenticated %}

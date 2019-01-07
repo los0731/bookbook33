@@ -55,7 +55,7 @@ a {
     color: #673AB7; }
 
 .main-content {
-  max-width: 640px;
+  max-width: 720px;
   padding: 16px 16px 80px 16px; }
 
 .nav-global ul {
@@ -114,7 +114,7 @@ a {
   margin-top: 8px;
   font-weight: 500; }
 .post-body .body {
-  margin: 40px 0 0 0; }
+  margin: 80px 0 0 0; }
   .post-body .body h1, .post-body .body h2, .post-body .body h3, .post-body .body h4, .post-body .body h5 {
     margin: 0 0 24px 0; }
   .post-body .body h1, .post-body .body h2, .post-body .body h3 {

@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Noto+Serif+KR:200,500,900&subset=korean");
 @import url("https://fonts.googleapis.com/css?family=IBM+Plex+Serif:100,400,700");
+@import url("https://fonts.googleapis.com/css?family=Overpass+Mono:300,400,600,700");
 body {
   font-family: 'IBM Plex Serif', 'Noto Serif KR', serif;
   margin: 0;
@@ -114,6 +115,58 @@ a {
   font-weight: 500; }
 .post-body .body {
   margin: 40px 0 0 0; }
+  .post-body .body h1, .post-body .body h2, .post-body .body h3, .post-body .body h4, .post-body .body h5 {
+    margin: 0 0 24px 0; }
+  .post-body .body h1, .post-body .body h2, .post-body .body h3 {
+    margin: 40px 0;
+    font-size: 1.75rem;
+    font-weight: 900;
+    line-height: 1.2;
+    letter-spacing: -1px;
+    word-spacing: -1px; }
+  .post-body .body h6 {
+    margin: -8px 0 12px 0;
+    font-size: 18px;
+    color: #98A8B9; }
+  .post-body .body code {
+    padding: 2px 8px;
+    vertical-align: text-top;
+    border-radius: 3px;
+    font-family: 'Overpass Mono', monospace;
+    font-size: 20px;
+    background-color: #ECEFF5;
+    color: #5F7F90; }
+  .post-body .body pre {
+    background-color: #ECEFF5;
+    color: #5F7F90;
+    padding: 12px 20px 16px 20px;
+    border-radius: 3px; }
+    .post-body .body pre::-webkit-scrollbar {
+      width: 24px;
+      height: 24px; }
+    .post-body .body pre::-webkit-scrollbar-thumb {
+      border: 10px solid #ECEFF5;
+      background-color: #98A8B9; }
+      .post-body .body pre::-webkit-scrollbar-thumb:active {
+        background-color: #263747; }
+    .post-body .body pre code {
+      padding: 0;
+      background-color: transparent; }
+  .post-body .body a {
+    text-decoration: underline; }
+  .post-body .body blockquote {
+    font-size: 24px;
+    line-height: 1.7;
+    padding: 0 0 0 20px;
+    margin: 32px 0;
+    border-left: 4px solid #E1E7EE; }
+    .post-body .body blockquote p {
+      color: #98A8B9; }
+  .post-body .body ul, .post-body .body ol {
+    font-size: 24px;
+    line-height: 1.7;
+    padding: 0 0 0 26px;
+    margin: 0 0 32px 0; }
 .post-body .btn-edit {
   margin-top: 40px; }
 

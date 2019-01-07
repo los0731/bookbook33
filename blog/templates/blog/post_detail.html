@@ -8,7 +8,9 @@
     {{ post.published_date }}
   </h6>
   {% endif %}
-  <p class="body">{{ post.text|linebreaksbr }}</p>
+  <div class="body">
+    {{ post.rendered_html|safe }}
+  </div>
 
   {% if user.is_authenticated %}
   <a class="btn-edit" href="{% url 'post_edit' pk=post.pk %}">🛠️</a>

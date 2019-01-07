@@ -1,6 +1,7 @@
 //@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,400,600,900&subset=korean');
 @import url('https://fonts.googleapis.com/css?family=Noto+Serif+KR:200,500,900&subset=korean');
 @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Serif:100,400,700');
+@import url('https://fonts.googleapis.com/css?family=Overpass+Mono:300,400,600,700');
 
 // 색상에 따라 구분
 $white-color: white;
@@ -89,6 +90,7 @@ $color-text--primary: $blue-grey-900;
 $color-text--secondary: $blue-grey-300;
 $color-border: $blue-grey-75;
 $color-border--hover: $blue-grey-200;
+$color-code: $blue-grey-50;
 
 $color-default: $blue-grey-50;
 $color-default--hover: $blue-grey-100;
@@ -258,7 +260,80 @@ a {
     font-weight: 500;
   }
 
-  .body {margin: 40px 0 0 0;}
+  .body {
+    margin: 40px 0 0 0;
+
+    h1, h2, h3, h4, h5 {margin: 0 0 24px 0;}
+
+    h1, h2, h3 {
+      margin: 40px 0;
+      font-size: 1.75rem;
+      font-weight: 900;
+      line-height: 1.2;
+      letter-spacing: -1px;
+      word-spacing: -1px;
+    }
+
+    h6 {
+      margin: -8px 0 12px 0;
+      font-size: 18px;
+      color: $color-text--secondary;
+    }
+
+    code {
+      padding: 2px 8px;
+      vertical-align: text-top;
+      border-radius: 3px;
+      font-family: 'Overpass Mono', monospace;
+      font-size: 20px;
+      background-color: $color-code;
+      color: $blue-grey-500;
+    }
+
+    pre {
+      background-color: $color-code;
+      color: $blue-grey-500;
+      padding: 12px 20px 16px 20px;
+      border-radius: 3px;
+
+      &::-webkit-scrollbar {
+        width: 24px;
+        height: 24px;
+      }
+      
+      &::-webkit-scrollbar-thumb {
+        border: 10px solid $color-code;
+        background-color: $blue-grey-300;
+        
+        &:active {background-color: $color-text--primary;}
+      }
+      
+
+      code {
+        padding: 0;
+        background-color: transparent;
+      }
+    }
+
+    a {text-decoration: underline;}
+
+    blockquote {
+      font-size: 24px;
+      line-height: 1.7;
+      padding: 0 0 0 20px;
+      margin: 32px 0;
+      border-left: 4px solid $color-border;
+
+      p {color: $color-text--secondary;}
+    }
+
+    ul, ol {
+      font-size: 24px;
+      line-height: 1.7;
+      padding: 0 0 0 26px;
+      margin: 0 0 32px 0;
+    }
+  }
 
   .btn-edit {margin-top: 40px;}
 }
@@ -290,5 +365,3 @@ a {
     &:hover {background-color: $color-primary--hover;}
   }
 }
-
-

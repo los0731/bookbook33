@@ -118,12 +118,14 @@ a {
   .post-body .body h1, .post-body .body h2, .post-body .body h3, .post-body .body h4, .post-body .body h5 {
     margin: 0 0 24px 0; }
   .post-body .body h1, .post-body .body h2, .post-body .body h3 {
-    margin: 40px 0;
+    margin: 64px 0 24px 0;
     font-size: 1.75rem;
     font-weight: 900;
     line-height: 1.2;
     letter-spacing: -1px;
     word-spacing: -1px; }
+  .post-body .body h4, .post-body .body h5 {
+    margin: 40px 0 24px 0; }
   .post-body .body h6 {
     margin: -8px 0 12px 0;
     font-size: 18px;

@@ -131,6 +131,8 @@ a {
     margin: -8px 0 12px 0;
     font-size: 18px;
     color: #98A8B9; }
+  .post-body .body p {
+    margin: 0 0 40px 0; }
   .post-body .body code {
     padding: 2px 8px;
     vertical-align: text-top;
@@ -142,7 +144,8 @@ a {
     background-color: #ECEFF5;
     color: #5F7F90;
     padding: 12px 20px 16px 20px;
-    border-radius: 3px; }
+    border-radius: 3px;
+    margin: 0 0 40px 0; }
     .post-body .body pre::-webkit-scrollbar {
       width: 24px;
       height: 24px; }

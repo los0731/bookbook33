@@ -284,6 +284,8 @@ a {
       color: $color-text--secondary;
     }
 
+    p {margin: 0 0 40px 0;}
+
     code {
       padding: 2px 8px;
       vertical-align: text-top;
@@ -298,6 +300,7 @@ a {
       color: $blue-grey-500;
       padding: 12px 20px 16px 20px;
       border-radius: 3px;
+      margin: 0 0 40px 0;
 
       &::-webkit-scrollbar {
         width: 24px;

@@ -3,13 +3,18 @@
 <!doctype html>
 <html lang="ko">
 <head>
-  <title>BOOKBOOK 33</title>
-  
+
+  {% if false %}
+    <title>BOOKBOOK 33</title>
+  {% else %}
+    <title>박기선</title>
+  {% endif %}
   <!-- meta tags 필요 -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="shortcut icon" href="{% static 'imgs/favicon.ico' %}">
-
+  {% if false %}
+    <link rel="shortcut icon" href="{% static 'imgs/favicon.ico' %}">
+  {% endif %}
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <link rel="stylesheet" href="{% static 'css/blog.css' %}">
@@ -19,7 +24,11 @@
   <nav class="nav-global">
     <ul>
       <li class="nav-global-item">
+        {% if false %}
           <a href="/" class="btn-home">BOOKBOOK 33</a>
+        {% else %}
+          <a href="/" class="btn-home">박기선</a>
+        {% endif %}
       </li>
 
       <li class="nav-global-item item-sign">

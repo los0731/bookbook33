@@ -4,11 +4,7 @@
 <html lang="ko">
 <head>
 
-  {% if false %}
-    <title>BOOKBOOK 33</title>
-  {% else %}
-    <title>박기선</title>
-  {% endif %}
+  <title>박기선</title>
   <!-- meta tags 필요 -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -24,20 +20,20 @@
   <nav class="nav-global">
     <ul>
       <li class="nav-global-item">
-        {% if false %}
-          <a href="/" class="btn-home">BOOKBOOK 33</a>
-        {% else %}
-          <a href="/" class="btn-home">박기선</a>
-        {% endif %}
+        <a href="/" class="btn-home">박기선</a>
       </li>
 
       <li class="nav-global-item item-sign">
-        <a href="/admin" class="btn-sign">️🔒</a>
+        <a href="/admin" class="btn-sign">
+          ️ 🔒
+        </a>
       </li>
 
       {% if user.is_authenticated %}
         <li class="nav-global-item item-new">
-          <a href="{% url 'post_new' %}" class="btn-new">️✍🏼</a>
+          <a href="{% url 'post_new' %}" class="btn-new">
+            ️✍🏼
+          </a>
         </li>
       {% endif %}
     </ul>

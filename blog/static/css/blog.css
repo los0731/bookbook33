@@ -117,7 +117,7 @@ a {
 .post-body .body {
   margin: 80px 0 0 0; }
   .post-body img {
-    max-width: 100%; }
+    max-width: 100%; width: 100%;}
   .post-body .body h1, .post-body .body h2, .post-body .body h3, .post-body .body h4, .post-body .body h5 {
     margin: 0 0 24px 0; }
   .post-body .body h1, .post-body .body h2, .post-body .body h3 {
